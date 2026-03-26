@@ -7,13 +7,10 @@ on:
   workflow_dispatch:
 
 jobs:
-        types: [published]
-
-jobs:
-    cleanup:
-        runs-on: macos-latest
-        steps:
-            - uses: actions/checkout@v4
+  cleanup:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
 
             - name: Cleaning up existing releases and tags
               env:
