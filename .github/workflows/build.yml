@@ -2,9 +2,14 @@ name: Build and Release Tweak
 
 permissions:
     contents: write
+    
+name: Build and Release Tweak
+
+permissions:
+    contents: write
 
 on:
-    release:
+    workflow_dispatch:
         types: [published]
 
 jobs:
