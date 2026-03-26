@@ -1,15 +1,12 @@
 name: Build and Release Tweak
 
 permissions:
-    contents: write
-    
-name: Build and Release Tweak
-
-permissions:
-    contents: write
+  contents: write
 
 on:
-    workflow_dispatch:
+  workflow_dispatch:
+
+jobs:
         types: [published]
 
 jobs:
